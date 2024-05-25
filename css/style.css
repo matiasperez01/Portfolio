@@ -9,6 +9,7 @@ html {
 body {
     margin: 0;
     font-family: Kanit;
+    color: #fff;
 }
 
 .logo{
@@ -91,6 +92,16 @@ li:hover{
     .boton-menu{
         display:block;
     }
+    
+}
+
+@media screen and (min-width: 1000px) {
+    .barra-navegacion-mobile{
+        width: 0%;
+    }
+    .ul-mobile{
+        display: none;
+    }
 }
 
 .contenedor-presentacion{
@@ -144,20 +155,17 @@ li:hover{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 50px;
     font-size: 30px;
     align-items: center;
 }
 
-.caja1{
+.subtitulo-presentacion{
     font-size: 50px;
     font-family: Oswald, cursive;
     text-align: center;
-    color: white;
 }
-.caja2{
-    font-family: Kanit;
-    color: #fff;
+
+.subtitulo-presentacion2{
     text-align: center;
 }
 
@@ -195,7 +203,7 @@ li:hover{
     font-size: 50px;
     font-family: Oswald, cursive;
     text-align: center;
-    color: white;
+    color: #fff;
 }
 
 #titulo-perfil{
@@ -204,7 +212,7 @@ li:hover{
 }
 
 .link-educacion{
-    color: white;
+    color: #fff;
 }
 
 .texto-sobre-mi, .tecnologias{
@@ -319,21 +327,6 @@ font-size: 1.2em;
     font-size: 1.2em;
 }
 
-
-button {
-    margin-top: 10px;
-    border-radius: 10px;
-    background-color: #c5c295;
-    border: none;
-    cursor: pointer;
-    height: 30px;
-}
-
-button:hover{
-    color: #fff;
-    height: 35px;
-}
-
 .contenedor-final{
     width: 100%;
     background-color: #a6a867;
@@ -343,8 +336,6 @@ button:hover{
 }
 
 #subir{
-
     font-size: 5em;
-
     color: #fff;
 }
