@@ -41,7 +41,6 @@ body {
 .items-barra{
     text-decoration: none;
     color: white;
-    
 }
 
 ul {
@@ -167,6 +166,21 @@ li:hover{
 
 .subtitulo-presentacion2{
     text-align: center;
+}
+
+.cv{
+    background-color: #51513d;
+    color: #fff;
+    text-decoration: none;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.cv:hover{
+    background-color: #fff;
+    color: #51513d;
 }
 
 .avatar{
@@ -338,4 +352,8 @@ font-size: 1.2em;
 #subir{
     font-size: 5em;
     color: #fff;
+}
+
+#subir:hover{
+    color: #c5c295;
 }
