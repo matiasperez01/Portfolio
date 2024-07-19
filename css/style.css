@@ -40,7 +40,6 @@ html {
 .barra-desktop-items{
     text-decoration: none;
     color: #dad7cd;
-    padding: 0px 20px;
     margin: 0px 10px;
     border-radius: 10px;
     background-color: #344e41;
@@ -86,7 +85,6 @@ li:hover {
 .contenedor-presentacion-texto-simple {
     font-size: 30px;
     text-align: center;
-
 }
 
 .contenedor-presentacion-texto-subtitulo{
@@ -134,43 +132,51 @@ li:hover {
     display: flex;
     width: 100%;
     height: 100%;
-    padding-top: 50px;
+    padding-top: 50px 0;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-    padding-bottom: 50px;
 }
 
 .contenedor-seccion-titulo{
     color: #344e41;
     font-size: 50px;
     width: 80%;
+    text-align: center;
+    margin: 20px;
 }
 
 .contenedor-seccion-subseccion{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 80%;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .contenedor-seccion-subseccion-texto-titulo{
-    font-size: 60px;
+    font-size: 40px;
 }
 
-.contenedor-seccion-subseccion-texto-info{
-    width: 80%;
+.contenedor-seccion-subseccion-texto{
+    text-align: center;
+    width: 70%;
 }
 
-.img-yo{
-    width: 80%;
-    border-radius: 50px;
-    animation: updown 5s infinite;
+.contenedor-seccion-subseccion-imagen{
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.imagen-yo {
+    width:100%;
+
 }
 
 .link-educacion{
@@ -179,7 +185,6 @@ li:hover {
 
 .contenedor-seccion-iconos{
     background-color: #344e41;
-    border-radius: 30px;
     font-size: 20px;
     text-align: center;
     display: flex;
@@ -187,7 +192,7 @@ li:hover {
     flex-direction: row;
     margin: 20px;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
 }
 
 .contenedor-seccion-iconos-titulo{
@@ -208,7 +213,7 @@ li:hover {
 }
 
 .contenedor-seccion-iconos-div:hover{
-    transform: rotate(20deg);
+    transform: scale(1.2);
 }
 
 #contenedor-seccion-iconos-i{
@@ -306,7 +311,7 @@ font-size: 1.2em;
     color: #c5c295;
 }
 
-
+/* 
 [data-animation="fade"]{
     opacity: 0;
     transform: translate(100%);
@@ -337,4 +342,4 @@ font-size: 1.2em;
 .unset {
     opacity: var(--opacity);
     transform: var(--transform);
-}
+} */
