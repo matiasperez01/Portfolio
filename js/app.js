@@ -25,28 +25,4 @@ observer.observe(seccion);
 
 
 
-function mostrarMenu(){
-    if (links.style.display === "none") {
-        links.style.display = "flex";
-        if(menu.style.display === "none"){
-            links.style.display = "none";
-        }
-      } else {
-        links.style.display = "none";
-      }
-}
-
-let item = document.getElementById('barra-navegacion-mobile');
-
-function ocultar(){
-    item.style.display = 'none';
-}
-
-function verMenu(){
-  if(menu.style.display === 'none'){
-    console.log("OK");
-    item.style.display = 'none';
-  }
-}
-
 
