@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -16,36 +15,22 @@
     <link rel="shortcut icon" href="images/icono.png">
 </head>
 <body>
-    <header>
+    <nav>
         <div class="barra-navegacion">
-            <div class="barra-navegacion-logo">
-                <a href="/">
-                    <img class="logo" src="images/Logo-PerezMatias.png" alt="Logo Matias">
-                </a>
-            </div>
-            <div class="barra-navegacion-links">
-                <ul>
-                    <li><a href="#sobre-mi" class="items-barra">Sobre Mi</a></li>
-                    <li><a href="#proyectos" class="items-barra">Proyectos</a></li>
-                    <li><a href="#contacto" class="items-barra">Contactame</a></li>
-                </ul>
-            </div>
-            <img class="boton-menu" id="boton-menu" src="images/botonmenu.jpeg" onclick="mostrarMenu()" alt="Boton Menu">
-        </div>
-        <div class="barra-navegacion-mobile" id="barra-navegacion-mobile">
-            <ul class="ul-mobile">
-                <li><a href="#sobre-mi" class="items-barra" id="items-barra" onclick="ocultar()">Sobre Mi</a></li>
-                <li><a href="#proyectos" class="items-barra" id="items-barra" onclick="ocultar()">Proyectos</a></li>
-                <li><a href="#contacto" class="items-barra" id="items-barra" onclick="ocultar()">Contactame</a></li>
+            <ul class="barra-desktop">
+                <li><a href="#inicio" class="barra-desktop-items">Inicio</a></li>
+                <li><a href="#sobre-mi" class="barra-desktop-items">Sobre Mi</a></li>
+                <li><a href="#proyectos" class="barra-desktop-items">Proyectos</a></li>
+                <li><a href="#contacto" class="barra-desktop-items">Contactame</a></li>
             </ul>
         </div>
-    </header>
+    </nav>
     <section>
         <div class="contenedor-presentacion" id="inicio">
             <div class="contenedor-presentacion-texto">
-                <span class="titulo">Hola! Soy Matias. &#128513 &#128075</span>
-                <p class="subtitulo-presentacion"><strong>Tecnico Superior en Programacion</strong></p>
-                <p class="subtitulo-presentacion2">Apasionado por aplicar soluciones tecnologicas a problemas cotidianos.</p>
+                <p class="contenedor-presentacion-texto-simple">Hola! Soy Matias. &#128513 &#128075</p>
+                <strong class="contenedor-presentacion-texto-subtitulo">Desarrollador Fullstack</strong>
+                <p class="contenedor-presentacion-texto-simple">Apasionado por el desarrollo de soluciones tecnologicas</p>
                 <a href="https://drive.google.com/file/d/1TYW2ZdF98YUkNvHTuikJxG0BL2wreYTh/view?usp=drive_link" class="cv" target="_blank">Ver CV</a>
             </div>
             <div class="contenedor-presentacion-avatar">
@@ -56,50 +41,69 @@
         </div>
     </section>
     <section>
-        <div class="contenedor-sobre-mi" id="sobre-mi">
-        <span class="titulo" id="titulo-perfil">Sobre Mi &#129489&#9995</span>
-            <div class="texto-sobre-mi">
-                <span class="subtitulo">Mi Perfil</span>
+        <div class="contenedor-seccion" id="sobre-mi">
+        <strong class="contenedor-seccion-titulo" id="titulo-perfil">&#129489&#9995 Sobre Mi</strong>
+            <div class="contenedor-seccion-subseccion">
                 <figure class="contenedor">
-                    <img src="images/yo.jpg" class="img-yo" data-animation="up" alt="Foto de mi en el Calafate">
+                    <img src="images/picofme2.png" class="img-yo" data-animation="up" alt="Foto de mi en el Calafate">
                 </figure>
-                <p>Me adentre en el mundo del desarrollo en el año 2022, cuando me inscribi
-                en la Tecnicatura Universitaria en Programacion, en la
-                <a class="link-educacion" href="https://www.frtdf.utn.edu.ar/" target="_blank">Universidad Tecnologica Nacional</a>.
-                Alli aprendi diversas metodologías y técnicas de trabajo en equipo,
-                sabiendo analizar, implementar, adaptar y controlar con eficiencia y habilidad técnica, 
-                el desarrollo de sistemas informaticos.
-                Actualmente continuo capacitandome en la plataforma 
-                    <a class="link-educacion" href="https://www.udemy.com/" target="_blank">Udemy</a>.
-                Donde ya realice los cursos de<br/>
-                -> <a class="link-educacion" target="_blank" href="https://www.udemy.com/course/universidad-desarrollo-web-moderno-html-css-javascript-html5-css3/">Universidad Desarrollo Web</a><br/>
-                -> <a class="link-educacion" target="_blank" href="https://www.udemy.com/course/universidad-java-especialista-en-java-desde-cero-a-master/">Universidad Java</a><br/>
-                </p>
+                <div class="contenedor-seccion-subseccion-texto">
+                    <span class="contenedor-seccion-subseccion-texto-titulo">Mi Perfil</span>
+                    <p class="contenedor-seccion-subseccion-texto-info">Me adentre en el mundo del desarrollo en el año 2022, cuando me inscribi
+                        en la Tecnicatura Universitaria en Programacion, en la
+                        <strong><a class="link-educacion" href="https://www.frtdf.utn.edu.ar/" target="_blank">Universidad Tecnologica Nacional</a></strong>.
+                        Alli aprendi diversas metodologías y técnicas de trabajo en equipo,
+                        sabiendo analizar, implementar, adaptar y controlar con eficiencia y habilidad técnica, 
+                        el desarrollo de sistemas informaticos.
+                        Actualmente continuo capacitandome en la plataforma 
+                            <strong><a class="link-educacion" href="https://www.udemy.com/" target="_blank">Udemy</a></strong>
+                        Donde ya realice los cursos de<br/>
+                        -> <a class="link-educacion" target="_blank" href="https://www.udemy.com/course/universidad-desarrollo-web-moderno-html-css-javascript-html5-css3/">Universidad Desarrollo Web</a><br/>
+                        -> <a class="link-educacion" target="_blank" href="https://www.udemy.com/course/universidad-java-especialista-en-java-desde-cero-a-master/">Universidad Java</a><br/>
+                    </p>
+                </div>
             </div>
-            <div class="tecnologias">
-                <span class="subtitulo">Tecnologias adquiridas</span>
+            <div class="contenedor-seccion-iconos">
+                <span class="contenedor-seccion-iconos-titulo">Tecnologias adquiridas</span>
                 <p>
-                    <div class="iconos-tecnologias"><i class="devicon-java-plain"></i><br/>Java </div>
-                    <div class="iconos-tecnologias"><i class="devicon-spring-original"> <br/>Spring </i></div>
-                    <div class="iconos-tecnologias"><i class="devicon-docker-plain"><br/> Docker </i></div>
-                    <div class="iconos-tecnologias"><i class="devicon-vuejs-plain"><br/> VueJS </i></div>
-                    <div class="iconos-tecnologias"><i class="devicon-git-plain"><br/> Git</i></div>
-                    <div class="iconos-tecnologias"><i class="devicon-ubuntu-plain"><br/> Ubuntu</i></div>
-                    <div class="iconos-tecnologias"><i class="devicon-html5-plain"><br/> HTML5 </i></div>
-                    <div class="iconos-tecnologias"><i class="devicon-css3-plain"><br/> CSS3 </i></div>
-                    <div class="iconos-tecnologias"><i class="devicon-javascript-plain"><br/> JavaScript </i></div>
-                    <div class="iconos-tecnologias"><i class="devicon-react-original"><br/> React </i></div>     
-                    <div class="iconos-tecnologias"><i class="devicon-mysql-plain"><br/> MySQL </i></div>                                       
+                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-java-plain"></i><br/>Java </div>
+                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-spring-original"> <br/> </i>Spring</div>
+                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-docker-plain"><br/> </i>Docker</div>
+                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-vuejs-plain"><br/> </i>VueJS</div>
+                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-git-plain"><br/></i>Git</div>
+                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-ubuntu-plain"><br/></i>Ubuntu</div>
+                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-html5-plain"><br/></i>HTML5</div>
+                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-css3-plain"><br/></i>CSS3</div>
+                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-javascript-plain"><br/></i>JavaScript</div>
+                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-react-original"><br/></i>React</div>     
+                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-mysql-plain"><br/></i>MySQL</div>                                       
                 </p>
             </div>
         </div>
         
     </section>
     <section >
-        <div class="contenedor-proyectos" id="proyectos">
-            <span class="titulo">Proyectos &#128187&#128218</span>
-            <div class="texto-proyectos">
-                <p class="titulo-proyecto">App Web para Taller Mecanico</p>
+        <div class="contenedor-seccion" id="proyectos">
+            <strong class="contenedor-seccion-titulo">&#128187&#128218 Proyectos</strong>
+            <div class="contenedor-seccion-subseccion">
+                <div class="contenedor-seccion-subseccion-texto">
+                    <p class="contenedor-seccion-subseccion-texto-titulo">App Web para Taller Mecanico</p>
+                    <p class="contenedor-seccion-subseccion-texto-info">
+                        Esta aplicacion fue realizada
+                        como proyecto final en la universidad.
+                        Desarrolle este Sistema con el fin de resolver
+                        el problema de gestion y control del inventario del taller mecanico.
+                        Tambien se permite agendar turnos, registrar vehiculos, clientes,
+                        pedidos, productos e insumos.
+                        <br/></br>
+                        Tecnologias utilizadas:<br/><br/>
+                        <i class="devicon-java-plain"> Java </i>
+                        <i class="devicon-vuejs-plain"> VueJS </i>
+                        <i class="devicon-spring-plain"> Spring Boot </i>
+                        <i class="devicon-postgresql-plain"> PostgreSQL </i>
+                        <i class="devicon-docker-plain"> Docker </i>
+                    </p>
+                </div>
                 <div id="carouselExampleFade" class="carousel slide carousel-fade">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -121,25 +125,33 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
-                <p>
-                    Esta aplicacion fue realizada
-                    como proyecto final en la universidad.
-                    Desarrolle este Sistema con el fin de resolver
-                    el problema de gestion y control del inventario del taller mecanico.
-                    Tambien se permite agendar turnos, registrar vehiculos, clientes,
-                    pedidos, productos e insumos.
-                    <br/></br>
-                    Tecnologias utilizadas:<br/><br/>
-                    <i class="devicon-java-plain"> Java </i>
-                    <i class="devicon-vuejs-plain"> VueJS </i>
-                    <i class="devicon-spring-plain"> Spring Boot </i>
-                    <i class="devicon-postgresql-plain"> PostgreSQL </i>
-                    <i class="devicon-docker-plain"> Docker </i>
-                </p>
+                
             </div>
 
-            <div class="texto-proyectos">
-                <p class="titulo-proyecto">App Gimnasio</p>
+            <div class="contenedor-seccion-subseccion">
+                <div class="contenedor-seccion-subseccion-texto">
+                    <p class="contenedor-seccion-subseccion-texto-titulo">App Gimnasio</p>
+                    <p class="contenedor-seccion-subseccion-texto-info">
+                        Actualmente, estoy desarrollando esta aplicacion
+                        como proyecto personal, a modo de practica
+                        combinando mis actividades favoritas,
+                        la programacion y el gimnasio.
+                        En la App Web busco resolver el
+                        problema de la mayoria de los gimnasios,
+                        de no saber cual es la rutina
+                        que te corresponde.
+                        La idea es asignarle una rutina a un alumno
+                        que pueda entrar a la aplicacion
+                        y ver los ejercicios que le corresponde cada dia.
+                        <br/></br>
+                        Tecnologias utilizadas:<br/><br/>
+                        <i class="devicon-java-plain"> Java </i>
+                        <i class="devicon-react-plain"> React </i>
+                        <i class="devicon-spring-plain"> Spring Boot </i>
+                        <i class="devicon-mysql-plain"> MySQL </i>
+                        <i class="devicon-docker-plain"> Docker </i>
+                    </p>
+                </div>
                 <div id="carouselExampleFade2" class="carousel carousel-dark slide">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -159,47 +171,25 @@
                     </button>
                 </div>
 
-                <p>
-                    Actualmente, estoy desarrollando esta aplicacion
-                    como proyecto personal, a modo de practica
-                    combinando mis actividades favoritas,
-                    la programacion y el gimnasio.
-                    En la App Web busco resolver el
-                    problema de la mayoria de los gimnasios,
-                    de no saber cual es la rutina
-                    que te corresponde.
-                    La idea es asignarle una rutina a un alumno
-                    que pueda entrar a la aplicacion
-                    y ver los ejercicios que le corresponde cada dia.
-                    <br/></br>
-                    Tecnologias utilizadas:<br/><br/>
-                    <i class="devicon-java-plain"> Java </i>
-                    <i class="devicon-react-plain"> React </i>
-                    <i class="devicon-spring-plain"> Spring Boot </i>
-                    <i class="devicon-mysql-plain"> MySQL </i>
-                    <i class="devicon-docker-plain"> Docker </i>
-                </p>
+                
             </div>
         </div>
     </section>
     <section>
-        <div class="contenedor-contactame" id="contacto">
-            <span class="titulo" id="titulo-perfil">Contactame! &#128241&#128233</span>
-            <div class="contacto">
-                <a href="https://www.linkedin.com/in/matiasezequielperez/" target="_blank"><i id="contacto-iconos" class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/matiasperez01/" target="_blank"><i id="contacto-iconos" class="bi bi-github"></i></a>
-                <a href="https://walink.co/ac1fbf" target="_blank"><i id="contacto-iconos" class="bi bi-whatsapp"></i></a>
-                <a href="https://www.instagram.com/matias.perezzz/" target="_blank"><i id="contacto-iconos" class="bi bi-instagram"></i></a>
-                <a href="mailto:matiasperezequiel@gmail.com?subject=Contacto&body=Hola Matias!" target="_blank"><i id="contacto-iconos" class="bi bi-envelope"></i></a>
+
+        <div class="contenedor-seccion" id="contacto">
+            <span class="contenedor-seccion-titulo" id="titulo-perfil">&#128241&#128233 Contactame!</span>
+            <div class="contenedor-seccion-iconos">
+                <span class="contenedor-seccion-iconos-titulo">Mis redes</span>
+                <div class="contenedor-seccion-iconos-div"><a href="https://www.linkedin.com/in/matiasezequielperez/" target="_blank" id="contenedor-seccion-iconos-i" ><i id="contenedor-seccion-iconos-i" class="bi bi-linkedin"></i></a></div>
+                <div class="contenedor-seccion-iconos-div"><a href="https://github.com/matiasperez01/" target="_blank" id="contenedor-seccion-iconos-i" ><i id="contenedor-seccion-iconos-i" class="bi bi-github"></i></a></div>
+                <div class="contenedor-seccion-iconos-div"><a href="https://walink.co/ac1fbf" target="_blank" id="contenedor-seccion-iconos-i" ><i class="bi bi-whatsapp" id="contenedor-seccion-iconos-i" ></i></a></div>
+                <div class="contenedor-seccion-iconos-div"><a href="https://www.instagram.com/matias.perezzz/" target="_blank" id="contenedor-seccion-iconos-i" ><i id="contenedor-seccion-iconos-i" class="bi bi-instagram"></i></a></div>
+                <div class="contenedor-seccion-iconos-div"><a href="mailto:matiasperezequiel@gmail.com?subject=Contacto&body=Hola Matias!" target="_blank" id="contenedor-seccion-iconos-i" ><i id="contenedor-seccion-iconos-i" class="bi bi-envelope"></i></a></div>
             </div>
 
         </div>
     </section>
-    <footer>
-        <div class="contenedor-final">
-            <a id="subir" href="#inicio"><i class="bi bi-arrow-up-circle-fill"></i></a>
-        </div>
-    </footer>
     <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
