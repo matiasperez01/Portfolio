@@ -13,7 +13,7 @@ html {
 }
 
 .barra-navegacion {
-    background-color: #344e41;
+    background-color: transparent;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -22,7 +22,22 @@ html {
     flex-wrap: nowrap;
     position: fixed;
     width: 100%;
+    transition: background-color .3s ease-in-out;
     z-index: 5;
+}
+
+.barra-navegacion.scrolled {
+    background-color: #344e41;
+    color: #fff;
+    transition: background-color .3s ease-in-out;
+}    
+
+.barra-navegacion.scrolled .barra-desktop-items{
+    background-color: #344e41;
+    color: #dad7cd;
+} 
+.barra-navegacion.scrolled .barra-desktop li{
+    background-color: #344e41;
 }
 
 .barra-desktop{
@@ -32,31 +47,24 @@ html {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #344e41;
     margin: 0px;
     padding: 0px;  
 }
 
+.barra-desktop li{
+    transition: transform 0.3s ease;
+    background-color: #dad7cd;
+}
+
 .barra-desktop-items{
     text-decoration: none;
-    color: #dad7cd;
+    color: #344e41;
     margin: 0px 10px;
-    border-radius: 10px;
-    background-color: #344e41;
     transition: background-color 0.9s, color 0.9s;
     display: flex;
     align-content: center;
 }
 
-.barra-desktop-items:hover{
-    background-color: #dad7cd;
-    color: #344e41;
-}
-
-li {
-    background-color: #344e41;
-    transition: transform 0.3s ease;
-}
 
 li:hover {
     transform: scale(1.2);
@@ -65,7 +73,7 @@ li:hover {
 .contenedor-presentacion{
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 97vh;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -96,7 +104,7 @@ li:hover {
 
 @keyframes updown {
     0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-5px); }
     100% { transform: translateY(0); }
 }
 
@@ -123,10 +131,10 @@ li:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilos para el estado hover */
+
 .avatar:hover {
-  transform: scale(1.1) rotate(5deg); /* Agranda y rota ligeramente el avatar */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Añade una sombra suave */
+  transform: scale(1.1) rotate(5deg); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
 }
 
 .contenedor-seccion{
@@ -175,7 +183,7 @@ li:hover {
 }
 
 .imagen-yo {
-    width:100%;
+    width:80%;
 }
 
 .link-educacion{
@@ -239,6 +247,29 @@ font-size: 1.2em;
     margin: 20px;
 }
 
+.contenedor-seccion-subseccion-texto-info-a{
+    background-color: #344e41;
+    border-radius: 10px;
+    padding: 5px;
+    color: #dad7cd;
+    text-decoration: none;
+}
+
+.imagen-proyecto {
+    margin: 20px;
+    width: 60%;
+}
+
+.imagen-proyecto img{
+    width: 100%;
+}
+
+.imagen-proyecto:hover{
+    transform: scale(1.05);
+    border: 2px solid #344e41;
+}
+
+
 .contenedor-contactame{
     background-color: #c5c295;
     display: flex;
@@ -299,6 +330,35 @@ font-size: 1.2em;
     animation: desaparecer 5s infinite; 
 }
 
+.contenedor-seccion-form{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-seccion-form form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #344e41;
+    margin-bottom: 30px;
+    width: 80%;
+    padding: 10px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
+}
+
+
+form label {
+    background-color: #344e41;
+    color: #dad7cd;
+}
+
+form input {
+    width: 80%;
+}
+
+
 @keyframes desaparecer{
     0%{transform: translateX(0px);}
     50%{transform: translateX(-20px);}
@@ -306,8 +366,14 @@ font-size: 1.2em;
 }
 
 @media (max-width: 500px){
-    #carouselExampleFade2, #carouselExampleFade{
-        width: 80% !important;
+    .imagen-proyecto {
+        width: 90%;
+    }
+}
+
+@media (min-width: 500px){
+    form input {
+        width: 30%;
     }
 }
 
