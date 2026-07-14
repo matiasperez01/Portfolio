@@ -1,194 +1,348 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Matias Perez | Desarrollador FullStack">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Matias Perez | Desarrollador FullStack</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="shortcut icon" href="images/icono.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matias Perez | Desarrollador Fullstack</title>
+<meta name="description" content="Matias Perez — Desarrollador Fullstack en Río Grande, Tierra del Fuego. Java, Spring, React, VueJS.">
+<meta property="og:title" content="Matias Perez | Desarrollador Fullstack">
+<meta property="og:description" content="Desarrollador Fullstack — Java, Spring, React, VueJS, Docker.">
+<meta property="og:image" content="images/avatar.jpg">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="barra-navegacion">
-            <ul class="barra-desktop">
-                <li><a href="#inicio" class="barra-desktop-items">Inicio</a></li>
-                <li><a href="#sobre-mi" class="barra-desktop-items">Sobre Mi</a></li>
-                <li><a href="#proyectos" class="barra-desktop-items">Proyectos</a></li>
-                <li><a href="#contacto" class="barra-desktop-items">Contacto</a></li>
+
+<a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+<div class="coord-rule" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <nav class="nav" aria-label="Navegación principal">
+    <a href="#inicio" class="brand">
+      <span class="brand-mark">MP</span>
+      <span class="brand-coord">53°47′S&nbsp;67°42′O</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio" class="nav-link">Inicio</a></li>
+      <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+      <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+      <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+      <li><a href="#contacto" class="nav-link">Contacto</a></li>
+    </ul>
+
+    <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
+      <span class="theme-toggle-track">
+        <span class="theme-toggle-thumb"></span>
+      </span>
+      <span class="theme-toggle-label" id="themeLabel">Modo noche</span>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="aurora"></div>
+      <div class="radar">
+        <span class="radar-ring"></span>
+        <span class="radar-ring"></span>
+        <span class="radar-ping"></span>
+      </div>
+    </div>
+
+    <div class="hero-inner container">
+      <p class="eyebrow reveal">
+        <span class="pin-dot" aria-hidden="true"></span>
+        Río Grande, Tierra del Fuego · fin del mundo
+      </p>
+
+      <h1 class="hero-title reveal">
+        Hola, soy <span class="highlight">Matias Perez</span><span class="wave" aria-hidden="true">👋</span>
+      </h1>
+
+      <p class="hero-role reveal">Desarrollador Fullstack</p>
+
+      <p class="hero-tagline reveal">
+        Construyo software con la misma precisión con la que se navega el fin del mundo:
+        con rumbo claro, atención al detalle y ganas de llegar más lejos.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1kig2UQa43tt6PDaaF_TR7SfwlSdAGC5Y/view?usp=sharing" target="_blank" rel="noopener">
+          Ver CV
+        </a>
+        <a class="btn btn-ghost" href="#contacto">Contactarme</a>
+      </div>
+
+      <div class="hero-socials reveal" aria-label="Redes sociales">
+        <a href="https://github.com/matiasperez01/" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/matiasezequielperez/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+        </a>
+        <a href="https://walink.co/ac1fbf" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M17.47 14.38c-.29-.15-1.7-.84-1.96-.93-.26-.1-.46-.15-.65.15-.19.29-.75.93-.92 1.12-.17.19-.34.22-.63.07-.29-.15-1.23-.45-2.35-1.45-.87-.77-1.45-1.73-1.63-2.02-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.65-1.57-.9-2.15-.24-.57-.48-.5-.65-.5-.17 0-.36-.02-.56-.02-.19 0-.51.07-.78.36-.26.29-1.02.99-1.02 2.42 0 1.43 1.04 2.81 1.19 3 .15.19 2.05 3.13 4.96 4.39.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.11.55-.08 1.7-.7 1.94-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.34ZM12.02 2C6.5 2 2.02 6.48 2.02 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.95 9.95 0 0 0 12.02 22C17.54 22 22 17.52 22 12S17.54 2 12.02 2Zm0 18.1c-1.66 0-3.2-.46-4.52-1.25l-.32-.19-3 .79.8-2.92-.21-.3A8.09 8.09 0 0 1 3.92 12c0-4.47 3.63-8.1 8.1-8.1 4.47 0 8.1 3.63 8.1 8.1 0 4.47-3.63 8.1-8.1 8.1Z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/matias.perezzz/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9a3.75 3.75 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16Zm0 1.8c-3.14 0-3.5.01-4.74.07-1.03.05-1.58.22-1.95.36-.49.19-.84.42-1.2.79-.37.36-.6.71-.79 1.2-.14.37-.31.92-.36 1.95-.06 1.24-.07 1.6-.07 4.74s.01 3.5.07 4.74c.05 1.03.22 1.58.36 1.95.19.49.42.84.79 1.2.36.37.71.6 1.2.79.37.14.92.31 1.95.36 1.24.06 1.6.07 4.74.07s3.5-.01 4.74-.07c1.03-.05 1.58-.22 1.95-.36.49-.19.84-.42 1.2-.79.37-.36.6-.71.79-1.2.14-.37.31-.92.36-1.95.06-1.24.07-1.6.07-4.74s-.01-3.5-.07-4.74c-.05-1.03-.22-1.58-.36-1.95a3.2 3.2 0 0 0-.79-1.2 3.2 3.2 0 0 0-1.2-.79c-.37-.14-.92-.31-1.95-.36-1.24-.06-1.6-.07-4.74-.07Zm0 3.06a4.98 4.98 0 1 1 0 9.96 4.98 4.98 0 0 1 0-9.96Zm0 1.8a3.18 3.18 0 1 0 0 6.36 3.18 3.18 0 0 0 0-6.36Zm5.16-1.99a1.16 1.16 0 1 1-2.33 0 1.16 1.16 0 0 1 2.33 0Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <a class="scroll-cue" href="#sobre-mi" aria-label="Bajar a la siguiente sección">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- SOBRE MI -->
+  <section class="about" id="sobre-mi">
+    <div class="container about-grid">
+      <div class="about-photo reveal">
+        <div class="photo-frame">
+          <img src="images/picofme2.png" alt="Matias Perez en El Calafate, Patagonia" loading="lazy"
+               onerror="this.closest('.photo-frame').classList.add('img-fallback')">
+          <div class="photo-fallback" aria-hidden="true">MP</div>
+        </div>
+        <p class="photo-caption">En El Calafate, Patagonia Argentina</p>
+      </div>
+
+      <div class="about-copy reveal">
+        <p class="section-eyebrow">01 · Sobre mí</p>
+        <h2 class="section-title">De la Patagonia al código</h2>
+
+        <p>
+          Me adentré en el mundo del desarrollo en 2022, cuando me inscribí en la
+          <strong>Tecnicatura Universitaria en Programación</strong> de la
+          <a href="https://www.frtdf.utn.edu.ar/" target="_blank" rel="noopener">Universidad Tecnológica Nacional (UTN‑FRTDF)</a>.
+          Ahí aprendí metodologías y técnicas de trabajo en equipo, y a analizar, implementar,
+          adaptar y controlar con eficiencia y habilidad técnica el desarrollo de sistemas informáticos.
+        </p>
+
+        <p>
+          Después seguí capacitándome de forma autodidacta en Udemy, con los cursos
+          <a href="https://www.udemy.com/course/universidad-desarrollo-web-moderno-html-css-javascript-html5-css3/" target="_blank" rel="noopener">Universidad Desarrollo Web</a>
+          y
+          <a href="https://www.udemy.com/course/universidad-java-especialista-en-java-desde-cero-a-master/" target="_blank" rel="noopener">Universidad Java</a>.
+        </p>
+
+        <p>
+          Hoy estoy en la búsqueda de oportunidades donde pueda aportar y seguir creciendo
+          profesionalmente en el área IT — tanto en desarrollo como en roles donde pueda
+          combinar código con trato con las personas.
+        </p>
+
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1kig2UQa43tt6PDaaF_TR7SfwlSdAGC5Y/view?usp=sharing" target="_blank" rel="noopener">
+          Descargar CV completo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section class="skills" id="habilidades">
+    <div class="container">
+      <p class="section-eyebrow reveal">02 · Stack</p>
+      <h2 class="section-title reveal">Tecnologías adquiridas</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3>Lenguajes &amp; Frameworks</h3>
+          <ul class="chip-list">
+            <li class="chip">Java</li>
+            <li class="chip">Spring</li>
+            <li class="chip">JavaScript</li>
+            <li class="chip">React</li>
+            <li class="chip">VueJS</li>
+            <li class="chip">HTML5</li>
+            <li class="chip">CSS3</li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3>Bases de datos</h3>
+          <ul class="chip-list">
+            <li class="chip">MySQL</li>
+            <li class="chip">PostgreSQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3>Herramientas &amp; DevOps</h3>
+          <ul class="chip-list">
+            <li class="chip">Docker</li>
+            <li class="chip">Git</li>
+            <li class="chip">Ubuntu</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="projects" id="proyectos">
+    <div class="container">
+      <p class="section-eyebrow reveal">03 · Proyectos destacados</p>
+      <h2 class="section-title reveal">Cosas que construí</h2>
+
+      <div class="project-list">
+
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="images/projects/taller.jpg" alt="Interfaz de la app del taller mecánico" loading="lazy"
+                 onerror="this.closest('.project-media').classList.add('img-fallback')">
+            <div class="media-fallback" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6l-3 3-4.3-4.3C.6 7.1 1 10.1 3 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1 0-1.4z"/></svg>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>App Web para Taller Mecánico</h3>
+              <span class="project-tag">Proyecto final · Universidad</span>
+            </div>
+            <p>
+              Sistema desarrollado para resolver la gestión y el control de inventario de un taller
+              mecánico real. Permite agendar turnos, generar presupuestos y registrar vehículos,
+              clientes, pedidos, productos e insumos. Se desplegó con Docker y hoy lo usa el taller,
+              a quienes capacité para su uso.
+            </p>
+            <ul class="tech-tags">
+              <li>Java</li><li>VueJS</li><li>Spring Boot</li><li>PostgreSQL</li><li>Docker</li>
             </ul>
-        </div>
-    </nav>
-    <section>
-        <div class="contenedor-presentacion" id="inicio">
-            <div class="contenedor-presentacion-texto">
-                <p class="contenedor-presentacion-texto-simple">Hola! Soy Matias. &#128513 &#128075</p>
-                <strong class="contenedor-presentacion-texto-subtitulo">Desarrollador Fullstack</strong>
-                <p class="contenedor-presentacion-texto-simple">Apasionado por el desarrollo de soluciones tecnologicas</p>
-                <a href="https://drive.google.com/file/d/1kig2UQa43tt6PDaaF_TR7SfwlSdAGC5Y/view?usp=sharing" class="cv" target="_blank">Ver CV</a>
+            <div class="project-links">
+              <a class="btn btn-outline btn-sm" href="https://drive.google.com/file/d/1ALz62uEG_Sh5vI3mFwSbKzzNTFdly0oj/view?usp=sharing" target="_blank" rel="noopener">Ver documentación</a>
             </div>
-            <div class="contenedor-presentacion-avatar">
-                <figure class="contenedor">
-                    <img class="avatar" src="images/avatar.jpeg" alt="Avatar Matias" data-animation="fade">
-                </figure>
-            </div>
-        </div>
-    </section>
-    <div class="linea-separadora"></div>
-    <section>
-        <div class="contenedor-seccion" id="sobre-mi">
-        <strong class="contenedor-seccion-titulo" id="titulo-perfil">&#129489 Sobre Mi</strong>
-            <div class="contenedor-seccion-subseccion">
-                <figure class="contenedor-seccion-subseccion-imagen">
-                        <img src="images/picofme2.png" class="imagen-yo" data-animation="up" alt="Foto de mi en el Calafate">
-                </figure>    
-                <div class="contenedor-seccion-subseccion-texto">
-                    <span class="contenedor-seccion-subseccion-texto-titulo">Mi Perfil</span>
-                    <p class="contenedor-seccion-subseccion-texto-info">Me adentre en el mundo del desarrollo en el año 2022, cuando me inscribi
-                        en la Tecnicatura Universitaria en Programacion, en la
-                        <strong><a class="link-educacion" href="https://www.frtdf.utn.edu.ar/" target="_blank">Universidad Tecnologica Nacional</a></strong>.
-                        Alli aprendi diversas metodologías y técnicas de trabajo en equipo,
-                        sabiendo analizar, implementar, adaptar y controlar con eficiencia y habilidad técnica, 
-                        el desarrollo de sistemas informaticos.
-                        Luego, continue capacitandome en la plataforma 
-                            <strong><a class="link-educacion" href="https://www.udemy.com/" target="_blank">Udemy</a></strong>
-                        donde realice los cursos de<br/>
-                        -> <a class="link-educacion" target="_blank" href="https://www.udemy.com/course/universidad-desarrollo-web-moderno-html-css-javascript-html5-css3/">Universidad Desarrollo Web</a><br/>
-                        -> <a class="link-educacion" target="_blank" href="https://www.udemy.com/course/universidad-java-especialista-en-java-desde-cero-a-master/">Universidad Java</a><br/>
-                        <strong>Me encuentro en la busqueda de oportunidades laborales donde pueda contribuir y aplicar mis
-                            conocimientos para crecer profesionalmente en el area IT.</strong>
-                    </p>
-                </div>
-            </div>
-            <br/><br/>
-            <div class="contenedor-seccion-iconos">
-                <span class="contenedor-seccion-iconos-titulo">Tecnologias adquiridas</span>
-                <p>
-                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-java-plain"></i><br/>Java </div>
-                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-spring-original"> <br/> </i>Spring</div>
-                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-docker-plain"><br/> </i>Docker</div>
-                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-vuejs-plain"><br/> </i>VueJS</div>
-                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-git-plain"><br/></i>Git</div>
-                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-ubuntu-plain"><br/></i>Ubuntu</div>
-                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-html5-plain"><br/></i>HTML5</div>
-                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-css3-plain"><br/></i>CSS3</div>
-                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-javascript-plain"><br/></i>JavaScript</div>
-                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-react-original"><br/></i>React</div>     
-                    <div class="contenedor-seccion-iconos-div"><i id="contenedor-seccion-iconos-i" class="devicon-mysql-plain"><br/></i>MySQL</div>                                       
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="borderline">
-        <div class="contenedor-seccion" id="proyectos">
-            <strong class="contenedor-seccion-titulo">&#128187 Proyectos Destacados</strong>
-            <div class="contenedor-seccion-subseccion">
-                <div class="contenedor-seccion-subseccion-texto">
-                    <p class="contenedor-seccion-subseccion-texto-titulo">App Web para Taller Mecanico</p>
-                    <p class="contenedor-seccion-subseccion-texto-info">
-                        Esta aplicacion fue realizada
-                        como proyecto final en la universidad.
-                        Desarrolle este Sistema con el fin de <strong>resolver
-                        el problema de gestion y control del inventario del taller mecanico.</strong>
-                        Tambien se permite agendar turnos, crear presupuestos, registrar vehiculos, clientes,
-                        pedidos, productos e insumos. La aplicacion se desplego mediante Docker y esta siendo
-                        utilizada por el Taller, a quienes brinde una capacitacion sobre el uso de la misma
-                        para que la puedan utilizar correctamente
-                        <br/><br/>
-                        <a href="https://drive.google.com/file/d/1ALz62uEG_Sh5vI3mFwSbKzzNTFdly0oj/view?usp=sharing" target="_blank" class="contenedor-seccion-subseccion-texto-info-a">Ver documentacion</a>
-                        <br/><br/>
-                        Tecnologias utilizadas:<br/><br/>
-                        <i class="devicon-java-plain"> Java </i>
-                        <i class="devicon-vuejs-plain"> VueJS </i>
-                        <i class="devicon-spring-plain"> Spring Boot </i>
-                        <i class="devicon-postgresql-plain"> PostgreSQL </i>
-                        <i class="devicon-docker-plain"> Docker </i>
-                    </p>
-                </div>
-                <div class="imagen-proyecto">
-                    <img src="./images/interfazproyectofinal1.jpg"  alt="Imagen de la App en seccion Empleados">
-                </div>
-                
-            </div>
+          </div>
+        </article>
 
-            <div class="contenedor-seccion-subseccion">
-                <div class="contenedor-seccion-subseccion-texto">
-                    <p class="contenedor-seccion-subseccion-texto-titulo">App Web Gimnasio</p>
-                    <p class="contenedor-seccion-subseccion-texto-info">
-                        Actualmente, estoy desarrollando esta aplicacion
-                        a modo de practica, combinando mis actividades favoritas,
-                        la programacion y el gimnasio.
-                        Lo que busco es resolver el
-                        problema de la mayoria de los gimnasios,
-                        de no saber cual es la rutina
-                        que te corresponde, los ejercicios que se deben realizar por dia.
-                        La idea es asignarle una rutina a un alumno
-                        que pueda entrar a la aplicacion
-                        y ver los ejercicios que le corresponde cada dia.
-                        <br/><br/>
-                        <a href="https://fitdreams.netlify.app/" target="_blank" class="contenedor-seccion-subseccion-texto-info-a">Probar Aplicacion</a>
-                        <br/></br>
-                        Tecnologias utilizadas:<br/><br/>
-                        <i class="devicon-java-plain"> Java </i>
-                        <i class="devicon-react-plain"> React </i>
-                        <i class="devicon-spring-plain"> Spring Boot </i>
-                        <i class="devicon-mysql-plain"> MySQL </i>
-                        <i class="devicon-docker-plain"> Docker </i>
-                    </p>
-                </div>
-                <div class="imagen-proyecto">
-                    <img src="images/interfazgimnasio.jpg"  alt="...">
-                </div>
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="images/projects/gimnasio.jpg" alt="Interfaz de la app de gimnasio FitDreams" loading="lazy"
+                 onerror="this.closest('.project-media').classList.add('img-fallback')">
+            <div class="media-fallback" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M20.57 14.86 22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57l1.43 1.43L2 13.43 3.43 14.86 7 11.29 15.57 20l-3.57 3.57L13.43 25l1.43-1.43L16.29 25l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 19.29l-1.43-1.43z"/></svg>
             </div>
-        </div>
-    </section>
-    <div class="linea-separadora"></div>
-    <section class="borderline">
-        <div class="contenedor-seccion" id="contacto">
-            <span class="contenedor-seccion-titulo" id="titulo-perfil">&#128233 Contactame!</span>
-            <div class="contenedor-seccion-form">
-                <form action="https://formsubmit.co/164fe30330bae7749f9297e90a5b84b5" method="POST">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre">
-                    </br>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" required placeholder="Escribe tu email">
-                    </br>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="mensaje" id="mensaje" cols="45" rows="3" required placeholder="Escribe tu mensaje"></textarea>
-                    </br>
-                    <input type="submit" value="Enviar" id="boton-form"/>
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>FitDreams — App Web Gimnasio</h3>
+              <span class="project-tag">En desarrollo</span>
+            </div>
+            <p>
+              Proyecto personal que combina mis dos pasiones: programar y entrenar. Resuelve un
+              problema común en los gimnasios: no saber qué rutina ni qué ejercicios corresponden
+              cada día. Cada alumno tiene asignada una rutina y ve en la app los ejercicios del día.
+            </p>
+            <ul class="tech-tags">
+              <li>Java</li><li>React</li><li>Spring Boot</li><li>MySQL</li><li>Docker</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-primary btn-sm" href="https://fitdreams.netlify.app/" target="_blank" rel="noopener">Probar aplicación</a>
+            </div>
+          </div>
+        </article>
 
-                    <input type="hidden" name="_next" value="https://matiasdevfullstack.netlify.app/">
-                    <input type="hidden" name="_captcha" value="false">
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="https://www.estiloanimalrg.com/og-image.jpg" alt="Interfaz de la tienda online Estilo Animal" loading="lazy"
+                 onerror="this.closest('.project-media').classList.add('img-fallback')">
+            <div class="media-fallback" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M17 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2ZM7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2ZM7.2 14.8h9.6c.75 0 1.41-.42 1.75-1.03l3.24-6.11A1 1 0 0 0 20.9 6.2H5.53l-.94-2H1v2h2.33l3.6 7.59-1.35 2.44c-.16.28-.25.6-.25.94a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.22-.37l.9-1.62Z"/></svg>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Estilo Animal — Tienda Online</h3>
+              <span class="project-tag">Cliente real · Full Stack</span>
+            </div>
+            <p>
+              Petshop online para un cliente real de Río Grande: ropa, accesorios y juguetes para
+              perros y gatos, con catálogo de productos, carrito de compras y checkout. Cuenta con API propia en Spring Boot para gestionar el stock, a traves de un panel de administrador con login.
+              Próximos pasos: integrar Mercado Pago como medio de pago.
+            </p>
+            <ul class="tech-tags">
+              <li>React</li><li>Vite</li><li>Java</li><li>Spring Boot</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-primary btn-sm" href="https://estiloanimalrg.com/" target="_blank" rel="noopener">Ver tienda</a>
+              <a class="btn btn-outline btn-sm" href="https://github.com/matiasperez01/estilo-animal-frontend" target="_blank" rel="noopener">Repo frontend</a>
+              <a class="btn btn-outline btn-sm" href="https://github.com/matiasperez01/estilo-animal-backend" target="_blank" rel="noopener">Repo backend</a>
+            </div>
+          </div>
+        </article>
 
-                </form>
-            </div>
-            <div class="contenedor-seccion-iconos">
-                <span class="contenedor-seccion-iconos-titulo">Mis redes</span>
-                <div class="contenedor-seccion-iconos-div"><a href="https://www.linkedin.com/in/matiasezequielperez/" target="_blank" id="contenedor-seccion-iconos-i" ><i id="contenedor-seccion-iconos-i" class="bi bi-linkedin"></i></a></div>
-                <div class="contenedor-seccion-iconos-div"><a href="https://github.com/matiasperez01/" target="_blank" id="contenedor-seccion-iconos-i" ><i id="contenedor-seccion-iconos-i" class="bi bi-github"></i></a></div>
-                <div class="contenedor-seccion-iconos-div"><a href="https://walink.co/ac1fbf" target="_blank" id="contenedor-seccion-iconos-i" ><i class="bi bi-whatsapp" id="contenedor-seccion-iconos-i" ></i></a></div>
-                <div class="contenedor-seccion-iconos-div"><a href="https://www.instagram.com/matias.perezzz/" target="_blank" id="contenedor-seccion-iconos-i" ><i id="contenedor-seccion-iconos-i" class="bi bi-instagram"></i></a></div>
-                <div class="contenedor-seccion-iconos-div"><a href="mailto:matiasperezequiel@gmail.com?subject=Contacto&body=Hola Matias!" target="_blank" id="contenedor-seccion-iconos-i" ><i id="contenedor-seccion-iconos-i" class="bi bi-envelope"></i></a></div>
-            </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="container contact-grid">
+      <div class="contact-intro reveal">
+        <p class="section-eyebrow">04 · Contacto</p>
+        <h2 class="section-title">Hablemos</h2>
+        <p>
+          Estoy buscando activamente nuevas oportunidades. Si tenés una posición abierta,
+          un proyecto en mente o simplemente querés saludar, escribime — respondo rápido.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:matiasperezequiel@gmail.com?subject=Contacto&body=Hola Matias!">
+              matiasperezequiel@gmail.com
+            </a>
+          </li>
+          <li><a href="https://walink.co/ac1fbf" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://www.linkedin.com/in/matiasezequielperez/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/matiasperez01/" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
+        <input type="hidden" name="form-name" value="contacto">
+        <p class="hidden-field"><label>No completar: <input name="bot-field"></label></p>
+
+        <div class="field">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
         </div>
-    </section>
-    <script>
-        window.addEventListener('scroll', function() {  
-            const navbar = document.querySelector('.barra-navegacion');
-            if (window.scrollY > 0) { 
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-    </script>    
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Matias Perez — Río Grande, Tierra del Fuego, Argentina</p>
+    <p class="footer-coord">53°47′S 67°42′O</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
